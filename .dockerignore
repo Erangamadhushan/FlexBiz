@@ -1,0 +1,22 @@
+.git
+.gitignore
+.github
+
+# Documents
+README.md
+LICENSE
+*.md
+
+.vscode
+.idea
+
+# OS files
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
