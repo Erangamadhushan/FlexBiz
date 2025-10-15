@@ -8,7 +8,7 @@ on:
 
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-  DOCKER_IMAGE_NAME: FlexBiz
+  DOCKER_IMAGE_NAME: flexbiz
   DOCKER_REGISTRY: docker.io
   DOCKER_TAG: latest
 
