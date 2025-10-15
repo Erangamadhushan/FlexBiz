@@ -29,13 +29,14 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: .
-          push: true
-          tags: ${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_TAG }}
-          cache-from: type=registry,ref=${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGE_NAME }}:cache
-          cache-to: type=inline
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
         
       - name: Verify Docker image
         run: |
@@ -80,12 +81,4 @@ jobs:
 #     type=sha,prefix={{branch}}-
 #     type=raw,value=latest,enable={{is_default_branch}}
 
-# - name: Build and push Docker image
-# uses: docker/build-push-action@v5
-# with:
-#   context: .
-#   push: ${{ github.event_name != 'pull_request' }}
-#   tags: ${{ steps.meta.outputs.tags }}
-#   labels: ${{ steps.meta.outputs.labels }}
-#   cache-from: type=gha
-#   cache-to: type=gha,mode=max
+
