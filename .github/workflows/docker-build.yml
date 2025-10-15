@@ -49,36 +49,9 @@ jobs:
       - name: Cleanup local Docker images
         run: docker image prune -f
 
-      - name: Notify on failure
-        if: failure()
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const issueComment = context.issue({ body: 'Docker image build or push failed. Please check the workflow logs for details.' });
-            await github.issues.createComment(issueComment);
-
-      - name: Notify on success
-        if: success()
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const issueComment = context.issue({ body: 'Docker image built and pushed successfully!' });
-            await github.issues.createComment(issueComment);
-
       - name: Image digest
         run: echo "Image pushed with digest ${{ steps.meta.outputs.digest }}"
 
-# - name: Extract metadata (tags, labels)
-# id: meta
-# uses: docker/metadata-action@v5
-# with:
-#   images: ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGE_NAME }}
-#   tags: |
-#     type=ref,event=branch
-#     type=ref,event=pr
-#     type=semver,pattern={{version}}
-#     type=semver,pattern={{major}}.{{minor}}
-#     type=sha,prefix={{branch}}-
-#     type=raw,value=latest,enable={{is_default_branch}}
+
 
 
