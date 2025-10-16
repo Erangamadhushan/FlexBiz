@@ -38,7 +38,3 @@ jobs:
           tags: |
                 erangamadhushan/flexbiz:${{ env.SHORT_SHA }}
                 erangamadhushan/flexbiz:latest
-
-
-
-
