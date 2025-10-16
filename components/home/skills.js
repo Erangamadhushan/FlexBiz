@@ -28,18 +28,18 @@ export function Skills() {
             <div class="col-lg-7">
                 <div class="skills-grid skills-animation" data-aos="fade-left" data-aos-delay="200">
 
-                <div class="skill-item">
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="800">
                     <div class="skill-header">
                         <h4>Project Management</h4>
                         <span class="skill-value">95%</span>
                     </div>
                     <div class="skill-bar progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div> 
                     </div>
                     <p>Strategic planning and execution</p>
                 </div><!-- End Skills Item -->
 
-                <div class="skill-item">
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="800">
                     <div class="skill-header">
                         <h4>Web Development</h4>
                         <span class="skill-value">88%</span>
@@ -50,7 +50,7 @@ export function Skills() {
                     <p>Modern frameworks and technologies</p>
                 </div><!-- End Skills Item -->
 
-                <div class="skill-item">
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="800">
                     <div class="skill-header">
                         <h4>Data Analysis</h4>
                         <span class="skill-value">82%</span>
@@ -61,7 +61,7 @@ export function Skills() {
                     <p>Business intelligence and insights</p>
                 </div><!-- End Skills Item -->
 
-                <div class="skill-item">
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="800">
                     <div class="skill-header">
                         <h4>Digital Marketing</h4>
                         <span class="skill-value">78%</span>
@@ -72,7 +72,7 @@ export function Skills() {
                     <p>Multi-channel campaign management</p>
                 </div><!-- End Skills Item -->
 
-                <div class="skill-item">
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="800">
                     <div class="skill-header">
                     <h4>Quality Assurance</h4>
                     <span class="skill-value">92%</span>
@@ -83,7 +83,7 @@ export function Skills() {
                     <p>Comprehensive testing protocols</p>
                 </div><!-- End Skills Item -->
 
-                <div class="skill-item">
+                <div class="skill-item" data-aos="fade-left" data-aos-delay="800">
                     <div class="skill-header">
                     <h4>Client Relations</h4>
                     <span class="skill-value">96%</span>
