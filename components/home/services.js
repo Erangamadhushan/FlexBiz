@@ -100,54 +100,55 @@ export function Services() {
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="service-card">
                     <div class="service-number">04</div>
-                    <div class="service-icon-wrapper">
-                        <div class="service-icon">
-                            <i class="bi bi-search"></i>
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <i class="bi bi-search"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="service-content">
-                        <h4>SEO Optimization</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
-                        <ul class="service-list">
-                            <li>Keyword Research</li>
-                            <li>On-page SEO</li>
-                            <li>Technical SEO</li>
-                            <li>Link Building</li>
-                        </ul>
-                        <div class="service-pricing">
-                            <span class="price-tag">$899</span>
-                            <a href="#" class="service-btn">
-                                <span>Learn More</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
+                        <div class="service-content">
+                            <h4>SEO Optimization</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+                            <ul class="service-list">
+                                <li>Keyword Research</li>
+                                <li>On-page SEO</li>
+                                <li>Technical SEO</li>
+                                <li>Link Building</li>
+                            </ul>
+                            <div class="service-pricing">
+                                <span class="price-tag">$899</span>
+                                <a href="#" class="service-btn">
+                                    <span>Learn More</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="service-card">
                     <div class="service-number">05</div>
-                    <div class="service-icon-wrapper">
-                        <div class="service-icon">
-                        <i class="bi bi-shield-lock"></i>
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                            <i class="bi bi-shield-lock"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="service-content">
-                        <h4>Cybersecurity</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
-                        <ul class="service-list">
-                        <li>Security Audits</li>
-                        <li>Penetration Testing</li>
-                        <li>Data Protection</li>
-                        <li>Compliance Consulting</li>
-                        </ul>
-                        <div class="service-pricing">
-                        <span class="price-tag">$1,999</span>
-                        <a href="#" class="service-btn">
-                            <span>Learn More</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+                        <div class="service-content">
+                            <h4>Cybersecurity</h4>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
+                            <ul class="service-list">
+                            <li>Security Audits</li>
+                            <li>Penetration Testing</li>
+                            <li>Data Protection</li>
+                            <li>Compliance Consulting</li>
+                            </ul>
+                            <div class="service-pricing">
+                            <span class="price-tag">$1,999</span>
+                            <a href="#" class="service-btn">
+                                <span>Learn More</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

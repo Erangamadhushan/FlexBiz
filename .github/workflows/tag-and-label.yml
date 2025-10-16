@@ -16,6 +16,7 @@ jobs:
     steps:
       - name: Add 'needs review' label to PR
         uses: actions-ecosystem/action-add-labels@v1
+        if: github.event_name == 'pull_request'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           labels: needs review 
